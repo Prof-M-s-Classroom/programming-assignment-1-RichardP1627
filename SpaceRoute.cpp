@@ -52,7 +52,7 @@ public:
     SpaceRoute() {    // Constructor
         head = nullptr;
         tail = nullptr;
-        length = 1;
+        length = 0;
     }
     ~SpaceRoute() {   // Destructor
         Node<T> *temp = head;
@@ -62,7 +62,6 @@ public:
             temp = head;
         }
     }
-
     void addWaypointAtBeginning(T& data) {
         Node<T> *newNode = new Node<T> (data);
         if (length == 0) {
@@ -256,10 +255,8 @@ public:
 
             Node<T>* current = head;
             while (current) {
-                // current->print();
-                //current = current->next;
-                cout << current -> data;
-                current = current -> next;
+                current->print();
+                current = current->next;
             }
             cout << endl;
         }
