@@ -36,8 +36,8 @@ public:
  * removeWaypointAtIndex: Removes the waypoint at the specified index ; O(n) since the method implements a for loop that increments until the index to remove the specified waypoint.
  * traverseForward: Prints all the waypoints in the list from front the back ; O(n) since there is a while loop that goes through every index of the list.
  * traverseBackward: Prints all the waypoint in the list from back to front ; O(n) since there is a while loop that goes through every index of the list.
- * getWaypoint: Returns the waypoint at a specified index ; O(logn) since there is a for loop that only executes through half of the list depending on which half the index falls in.
- * setWaypoint: Changes the data of a waypoint at a specified index ; O(logn) since there is a for loop that only executes through half of the list depending on which half the index falls in.
+ * getWaypoint: Returns the waypoint at a specified index ; O(n) since there is a for loop that executes through half of the list depending on which half the index falls in.
+ * setWaypoint: Changes the data of a waypoint at a specified index ; O(n) since there is a for loop that executes through half of the list depending on which half the index falls in.
  * print: Prints out the entire list ; O(n) since it iterates through each index of the list to print.
 */
 
